@@ -28,9 +28,6 @@ enabled = true
 name = "go"
 enabled = true
 
-  [analyzers.meta]
-  import_root = "github.com/eng-import-dd/facebook-folly"
-
 [[analyzers]]
 name = "ruby"
 enabled = true
@@ -38,9 +35,6 @@ enabled = true
 [[analyzers]]
 name = "python"
 enabled = true
-
-  [analyzers.meta]
-  runtime_version = "3.x.x"
 
 [[analyzers]]
 name = "docker"
@@ -60,3 +54,5 @@ enabled = true
 
   [analyzers.meta]
   runtime_version = "11"
+
+test_patterns = ["**/src/test/**"]
